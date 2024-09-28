@@ -1,0 +1,9 @@
+.informations {
+	height: "100vh";
+	position: "fixed";
+	top: 0;
+	left: 0;
+	width: 50%;
+	padding-top: 48px;
+	padding-left: 25px;
+}
