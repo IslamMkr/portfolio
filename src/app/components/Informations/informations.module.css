@@ -1,9 +1,42 @@
 .informations {
+	width: 100%;
 	height: "100vh";
 	position: "fixed";
 	top: 0;
 	left: 0;
-	width: 50%;
 	padding-top: 48px;
 	padding-left: 25px;
+}
+
+.name {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 40px;
+}
+
+.occupation {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	margin-top: 10px;
+}
+
+.introduction {
+	width: 320px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #94a3b8;
+	margin-top: 15px;
+}
+
+@media screen and (min-width: 640px) {
+	.name {
+		font-size: 48px;
+		line-height: 48px;
+	}
+
+	.occupation {
+		font-size: 20px;
+	}
 }

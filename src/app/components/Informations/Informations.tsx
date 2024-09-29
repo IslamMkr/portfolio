@@ -1,20 +1,22 @@
 import Grid from "@mui/material/Grid2"
+import Image from "next/image"
 import styles from "./informations.module.css"
+import GithubSVG from "../../assets/github.svg"
+import LinkedInSVG from "../../assets/linkedin.svg"
 
 const Informations = () => {
 	return (
 		<Grid className={styles.informations}>
 			<Grid>
-				<p style={{ fontWeight: "700", fontSize: "36px", lineHeight: "40px" }}>Islam Mokrane</p>
-				<p style={{ fontWeight: "500", fontSize: "18px", lineHeight: "28px", marginTop: 10 }}>
-					Junior Software Engineer
-				</p>
-				<p style={{ fontWeight: "400", fontSize: "16px", lineHeight: "24px", color: "#94a3b8", marginTop: 15 }}>
-					I build pixel-perfect, engaging, and accessible digital experiences.
-				</p>
+				<p className={styles.name}>Islam Mokrane</p>
+				<p className={styles.occupation}>Junior Software Engineer</p>
+				<p className={styles.introduction}>I build pixel-perfect, engaging, and accessible digital experiences.</p>
 			</Grid>
 
-			<Grid style={{ marginTop: 30 }}>Links</Grid>
+			<Grid className={styles.links} style={{ marginTop: 30 }}>
+				<Image src={GithubSVG} alt="Github" width={24} height={24} />
+				<Image src={LinkedInSVG} alt="LinkedIn" width={24} height={24} />
+			</Grid>
 		</Grid>
 	)
 }
