@@ -1,0 +1,23 @@
+.tag_container {
+	width: fit-content;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #183656;
+
+	border-radius: 9999px;
+
+	padding: 4px 12px;
+
+	margin-top: 8px;
+	margin-right: 6px;
+}
+
+.tag_text {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 20px;
+	color: #5eead4;
+}

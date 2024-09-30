@@ -1,0 +1,88 @@
+.header {
+	color: #e2e8f0;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 36px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+}
+
+.period {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	color: #64748b;
+	vertical-align: middle;
+	padding: 4px 0px 8px 0px;
+}
+
+.title_container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #e2e8f0;
+	transition: 0.3s;
+}
+
+.svg_container {
+	display: flex;
+	width: 24px;
+	height: 24px;
+}
+
+.svg {
+	width: 18px;
+	height: 18px;
+	fill: #e2e8f0;
+
+	position: relative;
+	top: 6px;
+	left: -4px;
+
+	transition: 0.15s;
+}
+
+.title_container:hover {
+	cursor: pointer;
+}
+
+.title_container:hover .title {
+	color: #5eead4;
+}
+
+.title_container:hover .svg {
+	fill: #5eead4;
+
+	top: 0px;
+	left: 2px;
+}
+
+.description {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #94a3b8;
+	margin-top: 8px;
+}
+
+.techs_container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 8px 0px 0px 0px;
+}
+
+@media screen and (min-width: 1024px) {
+	.header {
+		display: none;
+	}
+}
