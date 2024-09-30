@@ -25,4 +25,12 @@ export const experiences: Experience[] = [
 			"Microsoft Azure",
 		],
 	},
+	{
+		title: "Fullstack Developper · Bouira Industrial Engeneering ",
+		link: "https://www.linkedin.com/company/bouira-d-ing%C3%A9nierie-industrielle/",
+		period: "MARCH 2021 — SEPTEMBER 2021",
+		description:
+			"Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.",
+		technologies: ["Node.js", "Electron", "Express", "React", "TypeScript", "SQLite"],
+	},
 ]

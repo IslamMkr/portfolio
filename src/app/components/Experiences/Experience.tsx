@@ -1,9 +1,11 @@
+"use client"
+
 import React from "react"
 import Grid from "@mui/material/Grid2"
-import styles from "./experiences.module.css"
+import Tag from "../Tag/Tag"
 import ArrowSVG from "../../assets/arrow.svg"
 import type { Experience } from "@/app/utils/experiences"
-import Tag from "../Tag/Tag"
+import styles from "./experiences.module.css"
 
 interface ExperienceProps {
 	experience: Experience
@@ -12,8 +14,16 @@ interface ExperienceProps {
 const Experience = ({ experience }: ExperienceProps) => {
 	const { title, period, description, technologies, link } = experience
 
+	const openCompanyWebsite = () => {
+		if (!link) {
+			return
+		}
+
+		window.open(link, "_blank")
+	}
+
 	return (
-		<Grid className={styles.card}>
+		<Grid className={styles.card} onClick={openCompanyWebsite}>
 			<Grid>
 				<p className={styles.period}>{period}</p>
 			</Grid>

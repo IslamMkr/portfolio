@@ -8,9 +8,11 @@ const Experiences = () => {
 	return (
 		<Grid>
 			<p className={styles.header}>EXPERIENCES</p>
-			{experiences.map((experience, index) => (
-				<Experience key={index} experience={experience} />
-			))}
+			<Grid container direction="column" style={{ gap: 55 }}>
+				{experiences.map((experience, index) => (
+					<Experience key={index} experience={experience} />
+				))}
+			</Grid>
 		</Grid>
 	)
 }

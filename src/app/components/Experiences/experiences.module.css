@@ -11,6 +11,10 @@
 	flex-direction: column;
 }
 
+.card:hover {
+	cursor: pointer;
+}
+
 .period {
 	font-weight: 600;
 	font-size: 12px;
@@ -52,15 +56,11 @@
 	transition: 0.15s;
 }
 
-.title_container:hover {
-	cursor: pointer;
-}
-
-.title_container:hover .title {
+.card:hover .title {
 	color: #5eead4;
 }
 
-.title_container:hover .svg {
+.card:hover .svg {
 	fill: #5eead4;
 
 	top: 0px;
