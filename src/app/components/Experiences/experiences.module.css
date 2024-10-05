@@ -6,12 +6,17 @@
 	margin-bottom: 36px;
 }
 
+.experiences_container {
+	display: flex;
+	flex-direction: column;
+	gap: 55px;
+	margin-bottom: 55px;
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
-}
 
-.card:hover {
 	cursor: pointer;
 }
 
@@ -84,5 +89,27 @@
 @media screen and (min-width: 1024px) {
 	.header {
 		display: none;
+	}
+
+	.experiences_container {
+		gap: 20px;
+	}
+
+	.card {
+		background: rgba(255, 255, 255, 0.02);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(1.5px);
+		-webkit-backdrop-filter: blur(1.5px);
+		border-radius: 6px;
+
+		padding: 20px;
+	}
+
+	.card:hover {
+		background: rgba(255, 255, 255, 0.05);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(1.5px);
+		-webkit-backdrop-filter: blur(1.5px);
+		border-radius: 6px;
 	}
 }
