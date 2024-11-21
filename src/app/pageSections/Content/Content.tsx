@@ -7,7 +7,7 @@ import styles from "./content.module.css"
 
 const ContentSection = () => {
 	return (
-		<Grid className={styles.container}>
+		<Grid className={`${styles.container} scrollable`}>
 			<Grid className={styles.content}>
 				<About />
 				<Experiences />
