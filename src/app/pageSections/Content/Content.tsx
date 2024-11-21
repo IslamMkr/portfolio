@@ -4,6 +4,7 @@ import About from "@/app/components/About/About"
 import Experiences from "@/app/components/Experiences/Experiences"
 import Projects from "@/app/components/Projects/Projects"
 import styles from "./content.module.css"
+import Credit from "@/app/components/Credit/Credit"
 
 const ContentSection = () => {
 	return (
@@ -12,6 +13,7 @@ const ContentSection = () => {
 				<About />
 				<Experiences />
 				<Projects />
+				<Credit />
 			</Grid>
 		</Grid>
 	)
