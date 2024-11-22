@@ -4,8 +4,15 @@ import styles from "./projects.module.css"
 import { projects } from "@/app/utils/projects"
 import Project from "./Project"
 import Title from "../Title/Title"
+import { useRouter } from "next/navigation"
 
 const Projects = () => {
+	const router = useRouter()
+
+	const redirectToArchivePage = () => {
+		router.push("/archive")
+	}
+
 	return (
 		<Grid>
 			<p className={styles.header}>PROJECTS</p>
@@ -15,7 +22,7 @@ const Projects = () => {
 				))}
 			</Grid>
 
-			<Title title="View Full Project Archive" />
+			<Title title="View Full Project Archive" onClick={redirectToArchivePage} />
 		</Grid>
 	)
 }

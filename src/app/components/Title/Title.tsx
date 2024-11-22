@@ -5,11 +5,18 @@ import ArrowSVG from "../../assets/arrow.svg"
 
 type TitleProps = {
 	title: string
+	onClick?: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 }
 
-const Title = ({ title }: TitleProps) => {
+const Title = ({ title, onClick }: TitleProps) => {
+	const handleClickEvent = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+		if (onClick !== undefined) {
+			onClick(e)
+		}
+	}
+
 	return (
-		<Grid className={styles.title_container}>
+		<Grid className={styles.title_container} onClick={handleClickEvent}>
 			<p className={styles.title}>{title}</p>
 			<Grid className={styles.svg_container}>
 				<ArrowSVG className={styles.svg} />

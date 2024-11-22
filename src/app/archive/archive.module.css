@@ -1,0 +1,177 @@
+.page {
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+
+	font-family: var(--font-inter);
+}
+
+.container {
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+
+	padding: 48px 24px;
+}
+
+.name {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #5eead4;
+}
+
+.name_container {
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 4px;
+	cursor: pointer;
+	transition: 0.3s;
+	margin-bottom: 8px;
+}
+
+.arrow {
+	width: 18px;
+	height: 18px;
+	fill: #5eead4;
+	position: relative;
+
+	rotate: -135deg;
+
+	transition: 0.3s;
+}
+
+.name_container:hover .arrow {
+	left: -8px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 40px;
+	color: #e2e8f0;
+}
+
+.th {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: #e2e8f0;
+	text-align: left;
+}
+
+.td,
+.th {
+	padding: 16px 16px 16px 1px;
+}
+
+.td {
+	vertical-align: top;
+	padding-left: 4px;
+}
+
+.project {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #e2e8f0;
+}
+
+.shadowed {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #94a3b8;
+}
+
+.td {
+	border-bottom: 1px solid #2c3649;
+}
+
+.table {
+	margin-top: 60px;
+}
+
+.year {
+	width: 64px;
+}
+
+.tags_container {
+	display: flex;
+	align-items: top;
+	flex-wrap: wrap;
+	margin-top: -8px;
+}
+
+.madeat {
+	width: 100px;
+}
+
+.pro {
+	width: 300px;
+}
+
+.link {
+	width: 50px;
+}
+
+.svg {
+	fill: #90a1b8;
+	width: 16px;
+	height: 16px;
+	transition: 0.3s;
+}
+
+.svg:hover {
+	fill: #d6dee9;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+	.techs,
+	.madeat {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.title {
+		font-size: 48px;
+		line-height: 48px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		padding: 80px 48px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.container {
+		width: 900px;
+	}
+
+	.page {
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		width: 1024px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+		width: 1088px;
+	}
+}
