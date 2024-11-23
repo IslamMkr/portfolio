@@ -15,7 +15,12 @@ const Experiences = () => {
 				))}
 			</Grid>
 
-			<Title title="View Full Résumé" />
+			<Title
+				title="View Full Resume"
+				onClick={() =>
+					window.open("https://drive.google.com/file/d/1vhwoe2h6cpb9LVxNFYxFSA-VRdwnlKxc/view?usp=sharing", "_blank")
+				}
+			/>
 		</Grid>
 	)
 }
