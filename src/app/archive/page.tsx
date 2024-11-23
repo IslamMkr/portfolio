@@ -7,6 +7,7 @@ import ArrowSVG from "../assets/arrow.svg"
 import { useRouter } from "next/navigation"
 import Tag from "../components/Tag/Tag"
 import GithubSVG from "../assets/github.svg"
+import GitlabSVG from "../assets/gitlab.svg"
 import LinkSVG from "../assets/link.svg"
 
 import { projects } from "../utils/projects"
@@ -96,9 +97,14 @@ const Archive = () => {
 									{project.link !== undefined && project.link.includes("github") && (
 										<GithubSVG className={styles.svg} onClick={() => openProjectLink(project.link!)} />
 									)}
-									{project.link !== undefined && !project.link.includes("github") && (
-										<LinkSVG className={styles.svg} onClick={() => openProjectLink(project.link!)} />
+									{project.link !== undefined && project.link.includes("gitlab") && (
+										<GitlabSVG className={styles.svg} onClick={() => openProjectLink(project.link!)} />
 									)}
+									{project.link !== undefined &&
+										!project.link.includes("github") &&
+										!project.link.includes("gitlab") && (
+											<LinkSVG className={styles.svg} onClick={() => openProjectLink(project.link!)} />
+										)}
 								</td>
 							</tr>
 						))}

@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Grid from "@mui/material/Grid2"
 import styles from "./informations.module.css"
+import GitlabSVG from "../../assets/gitlab.svg"
 import GithubSVG from "../../assets/github.svg"
 import LinkedInSVG from "../../assets/linkedin.svg"
 
@@ -17,13 +18,17 @@ const InformationsSection = () => {
 		window.open("https://www.linkedin.com/in/islam-mokrane/", "_blank")
 	}
 
+	const openMyGitlabPage = () => {
+		window.open("https://gitlab.com/IslamMkr", "_blank")
+	}
+
 	return (
 		<Grid className={styles.container}>
 			<Grid className={styles.informations}>
 				<Grid className={styles.upperSection}>
 					<Grid>
 						<p className={styles.name}>Islam Mokrane</p>
-						<p className={styles.occupation}>Junior Software Engineer</p>
+						<p className={styles.occupation}>Software Engineer</p>
 						<p className={styles.introduction}>
 							Crafting high-performance, intuitive digital solutions while ensuring quality, accessibility, and seamless
 							user experiences.
@@ -53,6 +58,7 @@ const InformationsSection = () => {
 				</Grid>
 
 				<Grid className={styles.links}>
+					<GitlabSVG alt="Gitlab" className={styles.svg} onClick={openMyGitlabPage} />
 					<GithubSVG alt="Github" className={styles.svg} onClick={openMyGithubPage} />
 					<LinkedInSVG alt="LinkedIn" className={styles.svg} onClick={openMyLinkedInPage} />
 				</Grid>
