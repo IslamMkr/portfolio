@@ -17,7 +17,7 @@ const Projects = () => {
 		<Grid>
 			<p className={styles.header}>PROJECTS</p>
 			<Grid className={styles.projects_container}>
-				{projects.map((project, index) => (
+				{projects.slice(0, 3).map((project, index) => (
 					<Project key={index} project={project} />
 				))}
 			</Grid>

@@ -21,6 +21,7 @@ export const experiences: Experience[] = [
 			"Jest",
 			"Cypress",
 			"Firebase",
+			"Gitlab CI/CD",
 			"Google Cloud Platform",
 			"Microsoft Azure",
 		],
