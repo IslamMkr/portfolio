@@ -9,7 +9,7 @@ import Credit from "@/app/components/Credit/Credit"
 const ContentSection = () => {
 	return (
 		<Grid className={`${styles.container} scrollable`}>
-			<Grid className={styles.content}>
+			<Grid id="about" className={styles.content}>
 				<About />
 				<Experiences />
 				<Projects />

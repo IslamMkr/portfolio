@@ -7,7 +7,7 @@ import Title from "../Title/Title"
 
 const Experiences = () => {
 	return (
-		<Grid>
+		<Grid id="experiences" style={{ paddingTop: 80 }}>
 			<p className={styles.header}>EXPERIENCES</p>
 			<Grid className={styles.experiences_container}>
 				{experiences.map((experience, index) => (
