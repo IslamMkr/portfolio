@@ -18,7 +18,7 @@ const Experiences = () => {
 			<Title
 				title="View Full Resume"
 				onClick={() =>
-					window.open("https://drive.google.com/file/d/1nY6pJUASo160JpgsVQPTLMAJIxSWFkz2/view?usp=sharing", "_blank")
+					window.open("https://drive.google.com/file/d/1nUeYjBz5hpzxtrrFHHSFn8SvyThB6dfG/view?usp=sharing", "_blank")
 				}
 			/>
 		</Grid>
